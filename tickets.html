@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tickets - Bite the World</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 50px;
+      font-family: var(--font), sans-serif;
+      color: var(--text-color);
+      background-color: var(--bg-color);
+      line-height: 1.6;
+    }
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    header.main-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    header.main-header h1 {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 3rem;
+      color: #ff8ca5;
+      margin: 0;
+      line-height: 1.2;
+    }
+    .ticket-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      justify-content: center;
+    }
+    .ticket-card {
+      background-color: #fdf0f6;
+      border-radius: 12px;
+      padding: 25px 30px;
+      box-shadow: 0 4px 8px rgba(255, 140, 165, 0.3);
+      flex: 1 1 280px;
+      max-width: 300px;
+      transition: box-shadow 0.3s ease;
+      text-align: center;
+    }
+    .ticket-card:hover {
+      box-shadow: 0 8px 16px rgba(255, 140, 165, 0.5);
+    }
+    .ticket-card h2 {
+      color: #ff8ca5;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 1.8rem;
+      margin-top: 0;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #ff8ca5;
+      padding-bottom: 8px;
+    }
+    .price {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #d6336c;
+      margin: 20px 0;
+    }
+    .ticket-card p {
+      font-size: 1rem;
+      margin-bottom: 25px;
+    }
+    button.buy-btn {
+      background-color: #ff8ca5;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      padding: 12px 25px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button.buy-btn:hover {
+      background-color: #d6336c;
+    }
+    a.back-home {
+      display: inline-block;
+      margin-bottom: 30px;
+      color: #ff8ca5;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 1rem;
+      border: 1.5px solid #ff8ca5;
+      padding: 8px 15px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    a.back-home:hover {
+      background-color: #ff8ca5;
+      color: white;
+    }
+    footer.footer {
+      max-width: 900px;
+      margin: 40px auto 0;
+      padding: 10px 0;
+      text-align: center;
+      color: #888;
+      font-size: 0.9rem;
+    }
+    footer.footer .footer-links a {
+      margin: 0 10px;
+      color: #ff8ca5;
+      font-weight: 600;
+    }
+    footer.footer .footer-links a:hover {
+      color: #d6336c;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="index.html" class="back-home">← Back to Home</a>
+
+  <header class="main-header">
+    <h1>Buy Tickets</h1>
+  </header>
+
+  <main>
+    <div class="ticket-options">
+      <div class="ticket-card">
+        <h2>Single Day Pass</h2>
+        <p>Access to all events and vendors for one day.</p>
+        <div class="price">$25</div>
+        <button class="buy-btn" onclick="alert('Thank you for your interest! Ticket purchasing is coming soon.')">Buy Now</button>
+      </div>
+
+      <div class="ticket-card">
+        <h2>Full 3-Day Pass</h2>
+        <p>Enjoy all 3 days of the festival at a discounted rate.</p>
+        <div class="price">$60</div>
+        <button class="buy-btn" onclick="alert('Thank you for your interest! Ticket purchasing is coming soon.')">Buy Now</button>
+      </div>
+
+      <div class="ticket-card">
+        <h2>VIP Experience</h2>
+        <p>Includes 3-day pass + VIP seating, exclusive demos, and swag.</p>
+        <div class="price">$120</div>
+        <button class="buy-btn" onclick="alert('Thank you for your interest! Ticket purchasing is coming soon.')">Buy Now</button>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       
+        <title>Bite the World</title>
+         <link rel="icon" href="./img/Logo.png">
+         <link rel="stylesheet" href="styles.css">
+        
+    </head>
+    
+    <body>
+    
+        
+        
+        <div class="navbar">
+            <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#eventSchedule">Schedule</a></li>
+            <li><a href="#links">Links</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+            <li><button id = 'theme-button'>Toggle Dark Mode</button></li>
+            </ul>
+        </div>
+
+       
+        
+        <header class="header-container ">
+            <img class = "header-item" id="header-img" src="./img/Logo.png" alt="Bite the World Logo"/>
+            <div class=" header-item header-text">
+                <h1>Bite the World</h1>
+                <h2 class="tagline">Taste the Globe, One bite at a time.</h2>
+                <div class="button-group">
+                    <a href="tickets.html"><button type="button">Buy Tickets</button></a>
+                    <a href="daily-schedule.html"><button type="button">Daily Schedule</button></a>
+
+                    
+
+                </div>        
+            </div>
+            
+            
+            
+        </header>
+        
+        
+        
+        
+        <section id="about">
+             <h2 id = "about">About the Event</h2>
+            <p>Bite the World is a fun, flavor-packed event that celebrates 
+           food from all around the globe. Guests will get the chance to 
+           explore different cuisines, try unique dishes, and learn about 
+           the cultures behind them. It’s perfect for food lovers, curious
+            eaters, and anyone who enjoys trying something new. Whether you're 
+            a student, a local, or just stopping by, this event is made for you!</p>
+        </section>
+       
+        <section>
+            <h3>What to Expect</h3>
+            <h4>Flavors. Culture. Community</h4>
+        <ul>
+            <li> <b>Global tastings:</b> <i>Sample signature dishes from over 20 countries (from savory stews to sweet street snacks).</i></li>
+            <li> <b>Live Demos:</b> <i>Watch skilled chefs cook traditional meals and share the stories behind them.</i></li>
+            <li> <b>Interactive Fun:</b> <i>Join games, cooking challenges, and workshops to learn about spices, techniques, and cultural food rituals.</i></li>
+        </ul>
+        </section>
+        
+
+        
+        <hr>
+        <section id="eventSchedule">
+            <h2 id="eventSchedule">Event Schedule</h2>
+            <div class=" schedule-container">
+                <div class="schedule-item">
+                <img class ="pictures" alt="Illustration of international foods on a fork, each wrapped in a different country’s flag." src="./img/picture1.png"/>
+                <h3>Friday: Welcome to the Feast</h3>
+                <p>Kick off the weekend by meeting fellow food lovers, grabbing your flavor passport,
+                and enjoying a laid-back evening of global bites, live performances, and fun foodie
+                games to break the ice.</p>
+            </div>
+        
+            <div class="schedule-item">
+                <img  class="pictures" alt="A colorful plate with dishes from various cultures" src="./img/picture2.png"/>
+                <h3>Saturday: Taste & Learn</h3>
+                <p>Dive into a full day of cultural exploration through food! 
+                Taste dishes from around the world, join hands-on cooking classes, 
+                hear from guest chefs, and enjoy live music and showcases that celebrate
+                the art of food.</p>
+            </div>   
+        
+            <div class="schedule-item">
+                <img  class="pictures" alt="Illustrated world map with food icons like tacos, sushi, croissants, dumplings, and African flatbread placed over their regions of origin."
+                src="./img/picture3.png"/>
+                <h3>Sunday: Community & Celebration</h3>
+                <p>Wrap up the weekend with a global brunch, heartfelt stories from cooks and 
+                creators, and one last round of tastings. Reflect, connect, and celebrate 
+                the shared joy of food before saying farewell—with a few treats to take home.</p>
+            </div>
+        
+        
+        </section>
+        
+        
+        
+       
+
+<section>
+    <div id="rsvp">
+        <h2>RSVP</h2>
+        <div class="rsvp-container">
+            <div class="rsvp-para">
+                <p>Get ready to taste, explore, and celebrate! 🌎✨ 
+                    Join food lovers from everywhere at Bite the World 
+                    where global flavors meet unforgettable memories. <br>
+                    Spots are filling fast! — RSVP now and be part of the feast!</p>
+            </div>
+            <div class="rsvp-participants">
+                <p>🍽️ Talia from Houston has RSVP'd.</p>
+                <p>🍽️ Sofia from New York has RSVP'd.</p>
+                <p>🍽️ Chioma from Los Angeles has RSVP'd.</p>
+            </div>
+        </div>
+
+        <!--- Sign RSVP Form --->
+        <div class="form-container">
+            <form id="rsvp-form" title="rsvp-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="state">Home State: </label>
+                <input type="text" id="state" required>
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" required>
+
+                <label for="phone">Phone Number: </label>
+                <input type="tel" id="phone" required>
+
+                <!-- Submit button -->
+                <input type="submit" id="rsvp-button">
+            </form>
+            
+        </div>      
+    </div>
+
+        <p id="confirmation"></p>
+
+
+
+</section>
+
+
+<div id="success-modal" class="modal">
+    <div class="modal-container"  >
+        <div id="modal-item">
+            <p id="modal-text">Your spot is saved and the menu is calling! <br> Get ready to eat well!</p>
+        </div>
+        <div id="modal-item">
+         <img src="./img/chefhat.jpg" id="modal-image" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover; border: 3px solid grey;">   
+        </div>
+    </div>
+</div>
+
+
+       
+        <hr>
+        <section>
+            <h2 id = "links">Want to learn more on how to make cuisines from other countries?</h2>
+
+           
+            <a class="block" href="https://www.seriouseats.com/world-cuisine-guides-5117177">
+                <article>
+                    <h3>Serious Eats! World Cuisine Guide</h3>
+                    <p>Explore detailed guides to cuisines from all around the globe.</p>
+                </article>
+            </a>
+           
+            <a class="block" href="https://www.carolinescooking.com/eat-world-international-recipes/">
+                <article>
+                    <h3>Caroline's Cooking International</h3>
+                    <p>Explore rich and diverse cuisines from every corner of the globe.</p>
+                </article>
+            </a>    
+
+
+        </section>
+        
+        
+         <footer class="footer">
+            <p>&copy; 2025 Bite the World. All rights reserved.  |</p>
+            <div class="footer-links">
+                 <p> <a href="privacy.html">Privacy Policy</a>  |</p>
+                 <p> <a href="contact.html">Contact Us</a></p>
+            </div>
+           
+         </footer>
+
+
+
+         <script src="index.js"></script>
+
+         <!--make sections pop up-->
+         <script>
+            const sections = document.querySelectorAll("section");
+
+            const revealOnScroll = () => {
+                const triggerBottom = window.innerHeight * 0.85;
+
+                sections.forEach((section) => {
+                const sectionTop = section.getBoundingClientRect().top;
+
+                if (sectionTop < triggerBottom) {
+                    section.classList.add("visible");
+                }
+            });
+  };
+
+  window.addEventListener("scroll", revealOnScroll);
+  window.addEventListener("load", revealOnScroll); // <-- make sure it runs on page load too
+</script>
+
+    </body>
+</html>
